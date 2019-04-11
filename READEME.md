@@ -4,6 +4,10 @@ la récupération à distance de fichiers sur un autre ordinateur à partir d'un
 ##Test 
 
 **Ouvrer le terminal, run:
+sudo apt-get install nodejs
+##verifier les versions
+node -v 
+npm -v
 npm install
 node app.js
 dans le browser
