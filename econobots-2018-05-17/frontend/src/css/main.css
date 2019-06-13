@@ -1,0 +1,177 @@
+:root
+{
+	--header-theme-color: #240056;
+	--main-theme-color: #EFEFEF;
+	--dark-theme-color: #787878;
+	--light-theme-color: #C8C8C8;
+
+	--light-text-theme-color: #DEDEDE;
+	--dark-text-theme-color: #343434;
+
+	--header-height: 60px;
+	--min-screen-width: 800px;
+}
+
+body
+{
+	background-color: var(--main-theme-color) !important;
+	min-width: var(--min-screen-width);
+}
+
+#top-menu
+{
+	min-width: var(--min-screen-width);
+	height: var(--header-height) !important;
+	background-color: var(--header-theme-color) !important;
+}
+
+#body-container
+{
+	width: 100%;
+	height: 100%;
+	padding-top: var(--header-height);
+	color: var(--dark-text-theme-color) !important;
+}
+
+#admin-container, #account-container, #login-container
+
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+#account-container form
+{
+	width: 100%;
+	padding: 20px;
+	background-color: #F6F6F6;
+	border-radius: 8px;
+	border: 2px solid var(--dark-theme-color);
+}
+
+#account-container .lock-field .input:after
+{
+	font-family: Icons;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	font-size: 20px;
+	color: var(--dark-text-theme-color);
+}
+
+#login-container .segment
+{
+	width: 350px;
+}
+
+
+.lock-field.locked
+{
+	pointer-events: none;
+}
+
+.lock-field.locked .input
+{
+	opacity: 0.6;
+}
+
+.lock-field.locked .input:after
+{
+	content: "\f023";
+}
+
+.lock-field.unlocked .input:after
+{
+	content: "\f13e";
+}
+
+.offset-page-content
+{
+	padding-top: 50px;
+}
+
+.fill-parent
+{
+	width: 100%;
+	height: 100%;
+}
+
+#logo-img
+{
+	width: 180px
+}
+
+#login-position
+{
+	display: flex;
+	align-items: center;
+}
+
+.modals
+{
+	min-width: var(--min-screen-width);
+}
+
+.error-message
+{
+	color: red;
+}
+
+/* General */
+.grabbable
+{
+	cursor: -webkit-grab;
+	cursor: grab;
+}
+
+.grabbing
+{
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
+}
+
+/* Home */
+#pilot-interface
+{
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	color: var(--light-text-theme-color);
+}
+
+#pilot-board
+{
+	display: flex;
+	flex-direction: row;
+	min-height: calc(var(--min-screen-width) * 0.36);
+	height: 36vw;
+}
+
+#pilot-video
+{
+	flex: 0.64;
+	overflow: hidden;
+	border-right: 1px solid var(--light-theme-color);
+}
+
+#pilot-map
+{
+	flex: 0.36;
+	overflow: hidden;
+	border-left: 1px solid var(--light-theme-color);
+}
+
+#pilot-toolbar
+{
+	height: 150px;
+	width: 100%;
+}
+
+/* BatteryIndicator */
+#indicator-container
+{
+	text-align: right;
+}

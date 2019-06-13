@@ -1,0 +1,8 @@
+node_modules/
+backend/public/
+package-lock.json
+.idea
+*.pem
+*.csr
+*.crt
+
