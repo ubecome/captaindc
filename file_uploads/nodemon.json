@@ -1,8 +1,0 @@
-{
-    "env": {
-        "MONGO_USER": "abdelkarim",
-        "MONGO_PASSWORD": "HtczCcEyHgFsL5ZU",
-        "MONGO_DB": "events-react-dev",
-        "useNewUrlParser": true
-    }
-}
