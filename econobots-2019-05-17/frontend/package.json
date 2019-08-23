@@ -1,0 +1,34 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "dateformat": "^3.0.3",
+    "mdbreact": "^4.18.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-bootstrap": "^1.0.0-beta.9",
+    "react-dimensions": "^1.3.1",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.0",
+    "react-svg-pan-zoom": "^2.15.1",
+    "semantic-ui-css": "2.2.14",
+    "semantic-ui-icon": "2.2.14",
+    "semantic-ui-react": "0.78.1",
+    "socket.io-client": "^2.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "prepare-dev": "npm run build && rm -rf ../backend/public/* && cp -r build/static/ ../backend/public/",
+    "test": "react-scripts test --env=jsdom",
+    "lint": "eslint --ext js src/ || true",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-plugin-react": "^7.6.1"
+  },
+  "proxy": "http://localhost:8080"
+}
