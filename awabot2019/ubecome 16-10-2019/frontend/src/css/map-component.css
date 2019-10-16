@@ -1,0 +1,32 @@
+#map-container
+{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#target-lock-toggle
+{
+	position: absolute;
+	bottom: 6px;
+	right: 36px;
+	width: 24px;
+	height: 24px;
+	transition: all 0.2s ;
+	fill: white;
+	stroke: gray;
+}
+
+#target-lock-toggle.active
+{
+	-webkit-transform: rotate(0.5turn);
+	transform: rotate(0.5turn);
+	fill: #DB2828;
+	stroke: white;
+}
+
+#target-lock-toggle.shifted
+{
+	right: 112px;
+}
+

@@ -1,0 +1,13 @@
+#joystick
+{
+	overflow: visible;
+	margin: 10px;
+	stroke: #999999;
+	fill: #DD251E;
+}
+
+#joystick.disabled {
+	pointer-events: none;
+	stroke: #343434;
+	fill: #282828;
+}
